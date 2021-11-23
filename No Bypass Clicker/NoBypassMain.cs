@@ -18,6 +18,8 @@ namespace No_Bypass_Clicker
             {
                 Methods.LeftClick();
             }
+
+            // finish when wake up
         }
     }
 }
