@@ -27,7 +27,7 @@ namespace No_Bypass_Clicker
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(string.Format("{0}\n", e.Message));
+                    Console.WriteLine(string.Format("{0}{1}\n", e.Message, CommandHandler.PrintStack ? e.StackTrace : ""));
                 }
             }
         }
