@@ -1,11 +1,6 @@
 ﻿using NoBypass.Commands;
 using NoBypass.Commands.API;
-using NoBypass.Utilities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace No_Bypass_Clicker
 {
@@ -29,7 +24,8 @@ namespace No_Bypass_Clicker
                 try
                 {
                     CommandHandler.HandleCommand(int.Parse(Console.ReadLine()));
-                } catch (Exception e)
+                }
+                catch (Exception e)
                 {
                     Console.WriteLine(string.Format("{0}\n", e.Message));
                 }
