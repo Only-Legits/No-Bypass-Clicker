@@ -9,11 +9,11 @@ namespace NoBypass.Commands
 {
     public class CommandManager
     {
-        public static readonly List<Command> commands = new List<Command>();
+        public static readonly List<Command> Commands = new List<Command>();
 
-        public CommandManager()
+        public static void Initialize()
         {
-            commands.Add(new CommandPrintStackTraces("PRINT_STACK_TRACES", "Print Stack Traces (For Developers)", 1));
+            Commands.Add(new CommandPrintStackTraces("PRINT_STACK_TRACES", "Print Stack Traces (For Developers)", 1));
         }
     }
 }

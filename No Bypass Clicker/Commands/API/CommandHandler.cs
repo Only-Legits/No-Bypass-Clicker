@@ -16,6 +16,8 @@ namespace NoBypass.Commands.API
             {
                 case 1:
                     {
+                        PrintStack = !PrintStack;
+                        Console.WriteLine(string.Format("{0} printing of stack traces.", PrintStack ? "Enabled" : "Disabled"));
                         break;
                     }
                 default:
