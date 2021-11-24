@@ -1,4 +1,5 @@
-﻿using NoBypass.Utilities;
+﻿using NoBypass.Commands.API;
+using NoBypass.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +17,14 @@ namespace No_Bypass_Clicker
 
             while (true)
             {
-                Methods.LeftClick();
+                try
+                {
+                    CommandHandler.HandleCommand(int.Parse(Console.ReadLine()));
+                } catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
             }
-
-            // finish when wake up
         }
     }
 }
