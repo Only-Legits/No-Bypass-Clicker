@@ -12,7 +12,7 @@ namespace NoBypass.Commands.Implements
         public override void Execute()
         {
             CommandHandler.PrintStack = !CommandHandler.PrintStack;
-            Console.WriteLine(string.Format("{0} printing of stack traces.", CommandHandler.PrintStack ? "Enabled" : "Disabled"));
+            Console.WriteLine(string.Format("{0} printing of stack traces.\n", CommandHandler.PrintStack ? "Enabled" : "Disabled"));
         }
     }
 }

@@ -8,20 +8,15 @@ namespace NoBypass.Commands.API
 
         public static void HandleCommand(int input)
         {
-            switch (input)
+            foreach (Command command in CommandManager.Commands)
             {
-                case 1:
-                    {
-                        PrintStack = !PrintStack;
-                        Console.WriteLine(string.Format("{0} printing of stack traces.", PrintStack ? "Enabled" : "Disabled"));
-                        break;
-                    }
-                default:
-                    {
-                        Console.WriteLine("Non-existent command.");
-                        break;
-                    }
+                if (input == command.ID)
+                {
+                    command.Execute();
+                    return;
+                }
             }
+            Console.WriteLine("Non-existent option.");
         }
     }
 }
