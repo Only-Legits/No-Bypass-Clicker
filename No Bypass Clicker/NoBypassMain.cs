@@ -15,7 +15,7 @@ namespace No_Bypass_Clicker
 
             while (true)
             {
-                Console.WriteLine("No Bypass Clicker (by uncodable)\nNot made to be good, rather made to prove a point.\n");
+                Console.WriteLine("No Bypass Clicker (by uncodable)\nNot made to be good, rather made to prove a point.\nI will only update the autoclicker further if you want a particular feature (such as right-clicking).\nI will not make this bypass screenshares (too much effort)\nLastly, I'm aware the code can be better; I could care less for something that I rushed.\n");
                 foreach (Command command in CommandManager.Commands)
                 {
                     Console.WriteLine(string.Format("[{0}] {1} ({2})", command.ID, command.DisplayName, command.InternalName));

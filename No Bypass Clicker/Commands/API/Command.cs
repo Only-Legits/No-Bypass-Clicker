@@ -2,6 +2,7 @@
 {
     public abstract class Command
     {
+        public bool Enabled;
         public string InternalName, DisplayName;
         public int ID;
 

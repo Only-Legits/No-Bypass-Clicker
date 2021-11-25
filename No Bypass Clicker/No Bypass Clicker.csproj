@@ -52,6 +52,7 @@
     <Compile Include="Commands\API\Command.cs" />
     <Compile Include="Commands\API\CommandHandler.cs" />
     <Compile Include="Commands\API\CommandManager.cs" />
+    <Compile Include="Commands\Implements\CommandLeftClick.cs" />
     <Compile Include="Commands\Implements\CommandPrintStackTraces.cs" />
     <Compile Include="NoBypassMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
